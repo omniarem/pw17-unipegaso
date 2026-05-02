@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <!-- Codifica caratteri e viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PW 17 - ENI Sostenibilità</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- CSS personalizzato -->
+  <style>
+    /* Menu */
+    .menu  { background-color: #032e00; }
+	.nav-link { color: #ffffff; }
+	
+	/* Btn */
+    .btn-eni      { background-color: #FFD100; color: #1a1a1a; font-weight: 600; }
+    .btn-eni:hover { background-color: #e6bc00; color: #1a1a1a; }
+
+    /* Hero */
+    .hero {
+      background-color: #007c04;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    /* Bordo card */
+    .card-attivita {
+      border-top: 4px solid #198754;
+    }
+
+    /* Riga download */
+    .tabella-report tr:hover {
+      background-color: #f8f9fa;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #032e00;
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark navbar-expand-md menu">
+    <div class="container">
+      <!-- Logo testuale -->
+      <a class="navbar-brand fw-bold " href="#">PW 17 - ENI Sostenibilità</a>
+
+      <!-- Bottone hamburger per mobile -->
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Voci di menu  -->
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#chi-siamo">Chi siamo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#attivita">Sostenibilità</a></li>
+          <li class="nav-item"><a class="nav-link" href="#report">Report</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.eni.com" target="_blank">Sito ufficiale ↗</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="display-5 fw-bold mb-3">Eni Sostenibilità</span></h1>
+      <p class="lead mb-4" style="color:rgba(255,255,255,0.75); max-width:600px; margin:0 auto 24px;">
+        Scopri le attività di Eni e scarica
+        i Report di Sostenibilità ufficiali.
+      </p>
+      <a href="#report" class="btn btn-eni me-2">Scarica i Report</a>
+      <a href="#chi-siamo" class="btn btn-outline-light">Scopri di più</a>
+    </div>
+  </section>
+
+  <!-- INFO AZIENDA -->
+  <section class="py-5" id="chi-siamo">
+    <div class="container">
+      <h2 class="mb-4">Chi è Eni</h2>
+      <p>
+        Eni S.p.A. è una società energetica integrata italiana fondata nel 1953,
+        attiva nell'estrazione di petrolio e gas naturale (settore primario),
+        nella raffinazione, nella chimica e nelle energie rinnovabili.
+        Opera in oltre 60 Paesi con una produzione giornaliera di circa 1,7 milioni
+        di barili equivalenti di petrolio.
+      </p>
+      <p>
+        Attraverso i progetti <strong>Plenitude</strong> ed <strong>Enilive</strong>,
+        Eni sta accelerando la propria transizione energetica, investendo in
+        bioraffinerie, agri-feedstock, solare ed eolico.
+      </p>
+      <p>
+        La pubblicazione annuale del <em>Rapporto di Sostenibilità</em> è uno
+        degli strumenti principali con cui Eni dimostra la propria responsabilità
+        sociale e ambientale agli stakeholder.
+      </p>
+    </div>
+  </section>
+
+  <!-- ATTIVITA' DI SOSTENIBILITÀ -->
+  <section class="py-5 bg-light" id="attivita">
+    <div class="container">
+      <h2 class="mb-4">Attività di sostenibilità</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <div class="col">
+          <div class="card h-100 card-attivita">
+            <div class="card-body">
+              <h5 class="card-title">🌍 Clima e Decarbonizzazione</h5>
+              <p class="card-text">
+                Nel 2024 Eni ha ridotto le emissioni nette Scope 1 e 2 del 55%
+                nel settore Upstream e del 37% a livello di gruppo rispetto al 2018.
+                L'obiettivo è portare le emissioni di metano vicino allo zero entro il 2030,
+                con un impegno di neutralità carbonica totale entro il 2050.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 card-attivita">
+            <div class="card-body">
+              <h5 class="card-title">⚡ Energia Rinnovabile (Plenitude)</h5>
+              <p class="card-text">
+                Tramite Plenitude, Eni ha superato i 4 GW di capacità rinnovabile
+                installata nel 2024, con l'obiettivo di arrivare a 15 GW entro il 2030.
+                La piattaforma serve già 10 milioni di clienti e gestisce
+                oltre 21.000 punti di ricarica per veicoli elettrici.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 card-attivita">
+            <div class="card-body">
+              <h5 class="card-title">♻️ Bioraffinerie (Enilive)</h5>
+              <p class="card-text">
+                Enilive ha raggiunto una capacità di bioraffinazione di 1,65 milioni
+                di tonnellate all'anno, con l'ambizione di superare i 5 milioni entro
+                il 2030. Gli impianti di Venezia e Gela producono biocarburanti HVO
+                e carburanti sostenibili per l'aviazione (SAF).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 card-attivita">
+            <div class="card-body">
+              <h5 class="card-title">🤝 Comunità e Sviluppo Locale</h5>
+              <p class="card-text">
+                Nel 2024 Eni ha portato avanti oltre 100 iniziative attive
+                in 21 Paesi, con progetti di accesso ad acqua, salute, istruzione
+                ed energia allineati agli Obiettivi di Sviluppo Sostenibile ONU.
+                In collaborazione con ILO e IFC, ha promosso condizioni di lavoro
+                più sicure lungo la filiera agri-feedstock.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 card-attivita">
+            <div class="card-body">
+              <h5 class="card-title">💧 Gestione dell'Acqua</h5>
+              <p class="card-text">
+                Eni si è impegnata a raggiungere la water positivity in almeno
+                il 30% dei siti operati con prelievi superiori a 0,5 Mm³/anno
+                nelle aree a stress idrico entro il 2035,
+                riducendo l'impatto sulle risorse idriche locali.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 card-attivita">
+            <div class="card-body">
+              <h5 class="card-title">⚖️ Governance e Trasparenza</h5>
+              <p class="card-text">
+                Dal 2024 Eni pubblica per la prima volta la Sustainability Statement
+                in conformità alla direttiva europea CSRD, introducendo nuovi
+                standard di rendicontazione obbligatoria. Il report volontario
+                "Eni for" è alla sua diciannovesima edizione.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- REPORT -->
+  <section class="py-5" id="report">
+    <div class="container">
+      <h2 class="mb-2">Report di Sostenibilità</h2>
+      <p class="text-muted mb-4">
+        Documenti ufficiali pubblicati da Eni S.p.A., scaricabili gratuitamente.
+      </p>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
+
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="fw-bold fs-4">2024</span>
+                <span class="badge bg-success">Nuovo</span>
+              </div>
+              <p class="card-text text-muted mb-3">Eni for 2024 – A Just Transition</p>
+
+              <a href="https://www.eni.com/content/dam/enicom/documents/ita/sostenibilita/2024/eni-for-2024-just-transition-ita.pdf"
+                 class="btn btn-eni mt-auto"
+                 target="_blank" rel="noopener noreferrer" download>
+                ↓ Scarica PDF
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+              <span class="fw-bold fs-4 mb-2">2023</span>
+              <p class="card-text text-muted mb-3">Eni for 2023 – A Just Transition</p>
+              <a href="https://www.eni.com/content/dam/enicom/documents/ita/sostenibilita/2023/eni-for-2023-just-transition-ita.pdf"
+                 class="btn btn-eni mt-auto"
+                 target="_blank" rel="noopener noreferrer" download>
+                ↓ Scarica PDF
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+              <span class="fw-bold fs-4 mb-2">2022</span>
+              <p class="card-text text-muted mb-3">Eni for 2022 – A Just Transition</p>
+              <a href="https://www.eni.com/assets/documents/ita/sostenibilita/2022/eni-for-2022-just-transition-ita.pdf"
+                 class="btn btn-eni mt-auto"
+                 target="_blank" rel="noopener noreferrer" download>
+                ↓ Scarica PDF
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+              <span class="fw-bold fs-4 mb-2">2021</span>
+              <p class="card-text text-muted mb-3">Eni for 2021 – A Just Transition</p>
+              <a href="https://www.eni.com/assets/documents/ita/sostenibilita/2021/eni-for-2021-just-transition-ita.pdf"
+                 class="btn btn-eni mt-auto"
+                 target="_blank" rel="noopener noreferrer" download>
+                ↓ Scarica PDF
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <span class="fw-bold fs-5">PW 17 - ENI Sostenibilità</span>
+          <p class="mt-2 mb-0" style="font-size:13px;">
+            Pagina DEMO realizzata a scopo didattico – PW17 - Unipegaso<br>
+            Contenuti e report © Eni S.p.A.
+          </p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="https://www.eni.com/it-IT/sostenibilita.html"
+             target="_blank" rel="noopener noreferrer"
+             class="btn btn-eni">
+            Visita Eni.com ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
